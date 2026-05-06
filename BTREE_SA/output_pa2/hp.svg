@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="910" viewBox="0 0 1200 910">
+<rect width="100%" height="100%" fill="#faf7ef"/>
+<rect x="10" y="10" width="98%" height="98%" fill="none" stroke="#d9d0bf"/>
+<text x="30" y="22" font-size="16" font-family="monospace" fill="#222">cost=4916499.000  wire=258006.000  area=9574992  packed=3304x2898  runtime=0.6650s</text>
+<rect x="30.00" y="30.00" width="1140.00" height="780.22" fill="none" stroke="#cc3d3d" stroke-width="2" stroke-dasharray="8 6"/>
+<text x="30" y="890" font-size="14" font-family="monospace" fill="#aa2e2e">outline=5412x3704</text>
+<rect x="30.00" y="199.78" width="695.96" height="610.44" fill="none" stroke="#2b4c7e" stroke-width="2" />
+<rect x="30.00" y="412.11" width="218.23" height="97.32" fill="#b151b0" stroke="#222" stroke-width="1" />
+<text x="139.11" y="464.76" text-anchor="middle" font-size="11" font-family="monospace" fill="#111">clkc</text>
+<rect x="442.86" y="518.27" width="147.45" height="79.62" fill="#b251b0" stroke="#222" stroke-width="1" />
+<text x="516.59" y="562.08" text-anchor="middle" font-size="11" font-family="monospace" fill="#111">clkd</text>
+<rect x="30.00" y="553.66" width="206.43" height="44.24" fill="#9797b0" stroke="#222" stroke-width="1" />
+<text x="133.22" y="579.78" text-anchor="middle" font-size="11" font-family="monospace" fill="#111">cmp1</text>
+<rect x="236.43" y="553.66" width="206.43" height="44.24" fill="#9897b0" stroke="#222" stroke-width="1" />
+<text x="339.65" y="579.78" text-anchor="middle" font-size="11" font-family="monospace" fill="#111">cmp2</text>
+<rect x="30.00" y="509.42" width="206.43" height="44.24" fill="#9997b0" stroke="#222" stroke-width="1" />
+<text x="133.22" y="535.54" text-anchor="middle" font-size="11" font-family="monospace" fill="#111">cmp3</text>
+<rect x="30.00" y="695.21" width="695.96" height="115.01" fill="#5f5cb1" stroke="#222" stroke-width="1" />
+<text x="377.98" y="756.72" text-anchor="middle" font-size="11" font-family="monospace" fill="#111">cntd</text>
+<rect x="30.00" y="199.78" width="695.96" height="115.01" fill="#705cb1" stroke="#222" stroke-width="1" />
+<text x="377.98" y="261.28" text-anchor="middle" font-size="11" font-family="monospace" fill="#111">cntu</text>
+<rect x="248.23" y="412.11" width="424.66" height="53.08" fill="#62576d" stroke="#222" stroke-width="1" />
+<text x="460.55" y="442.65" text-anchor="middle" font-size="11" font-family="monospace" fill="#111">npd</text>
+<rect x="30.00" y="314.79" width="648.78" height="97.32" fill="#71576d" stroke="#222" stroke-width="1" />
+<text x="354.39" y="367.45" text-anchor="middle" font-size="11" font-family="monospace" fill="#111">nps</text>
+<rect x="248.23" y="465.19" width="424.66" height="53.08" fill="#745d6d" stroke="#222" stroke-width="1" />
+<text x="460.55" y="495.73" text-anchor="middle" font-size="11" font-family="monospace" fill="#111">ppd</text>
+<rect x="30.00" y="597.89" width="648.78" height="97.32" fill="#835d6d" stroke="#222" stroke-width="1" />
+<text x="354.39" y="650.55" text-anchor="middle" font-size="11" font-family="monospace" fill="#111">pps</text>
+</svg>

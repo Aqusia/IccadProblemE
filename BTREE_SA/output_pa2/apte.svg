@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="735" viewBox="0 0 1200 735">
+<rect width="100%" height="100%" fill="#faf7ef"/>
+<rect x="10" y="10" width="98%" height="98%" fill="none" stroke="#d9d0bf"/>
+<text x="30" y="22" font-size="16" font-family="monospace" fill="#222">cost=24030762.000  wire=748244.000  area=47313280  packed=9440x5012  runtime=0.5881s</text>
+<rect x="30.00" y="30.00" width="1140.00" height="605.18" fill="none" stroke="#cc3d3d" stroke-width="2" stroke-dasharray="8 6"/>
+<text x="30" y="715" font-size="14" font-family="monospace" fill="#aa2e2e">outline=11894x6314</text>
+<rect x="30.00" y="154.79" width="904.79" height="480.38" fill="none" stroke="#2b4c7e" stroke-width="2" />
+<rect x="30.00" y="158.63" width="175.02" height="301.53" fill="#afcd7a" stroke="#222" stroke-width="1" />
+<text x="117.51" y="313.39" text-anchor="middle" font-size="11" font-family="monospace" fill="#111">cc_11</text>
+<rect x="30.00" y="460.16" width="301.53" height="175.02" fill="#b0cd7a" stroke="#222" stroke-width="1" />
+<text x="180.77" y="551.67" text-anchor="middle" font-size="11" font-family="monospace" fill="#111">cc_12</text>
+<rect x="331.53" y="460.16" width="301.53" height="175.02" fill="#b1cd7a" stroke="#222" stroke-width="1" />
+<text x="482.30" y="551.67" text-anchor="middle" font-size="11" font-family="monospace" fill="#111">cc_13</text>
+<rect x="633.07" y="460.16" width="301.53" height="175.02" fill="#b2cd7a" stroke="#222" stroke-width="1" />
+<text x="783.83" y="551.67" text-anchor="middle" font-size="11" font-family="monospace" fill="#111">cc_14</text>
+<rect x="759.20" y="154.79" width="175.59" height="305.37" fill="#b2ce7a" stroke="#222" stroke-width="1" />
+<text x="847.00" y="311.48" text-anchor="middle" font-size="11" font-family="monospace" fill="#111">cc_21</text>
+<rect x="583.61" y="154.79" width="175.59" height="305.37" fill="#b3ce7a" stroke="#222" stroke-width="1" />
+<text x="671.41" y="311.48" text-anchor="middle" font-size="11" font-family="monospace" fill="#111">cc_22</text>
+<rect x="232.43" y="154.79" width="175.59" height="305.37" fill="#b4ce7a" stroke="#222" stroke-width="1" />
+<text x="320.22" y="311.48" text-anchor="middle" font-size="11" font-family="monospace" fill="#111">cc_23</text>
+<rect x="408.02" y="154.79" width="175.59" height="305.37" fill="#b5ce7a" stroke="#222" stroke-width="1" />
+<text x="495.81" y="311.48" text-anchor="middle" font-size="11" font-family="monospace" fill="#111">cc_24</text>
+<rect x="205.02" y="380.99" width="27.41" height="79.17" fill="#7a746a" stroke="#222" stroke-width="1" />
+</svg>

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1014" viewBox="0 0 1200 1014">
+<rect width="100%" height="100%" fill="#faf7ef"/>
+<rect x="10" y="10" width="98%" height="98%" fill="none" stroke="#d9d0bf"/>
+<text x="30" y="22" font-size="16" font-family="monospace" fill="#222">cost=10299429.250  wire=510818.500  area=20088040  packed=3878x5180  runtime=0.8929s</text>
+<rect x="30.00" y="30.00" width="1140.00" height="883.96" fill="none" stroke="#cc3d3d" stroke-width="2" stroke-dasharray="8 6"/>
+<text x="30" y="994" font-size="14" font-family="monospace" fill="#aa2e2e">outline=6937x5379</text>
+<rect x="30.00" y="62.70" width="637.30" height="851.26" fill="none" stroke="#2b4c7e" stroke-width="2" />
+<rect x="452.18" y="812.73" width="212.82" height="101.23" fill="#955fbc" stroke="#222" stroke-width="1" />
+<text x="558.59" y="867.35" text-anchor="middle" font-size="11" font-family="monospace" fill="#111">BLKB</text>
+<rect x="452.18" y="732.21" width="212.82" height="80.52" fill="#975fbc" stroke="#222" stroke-width="1" />
+<text x="558.59" y="776.47" text-anchor="middle" font-size="11" font-family="monospace" fill="#111">BLKD</text>
+<rect x="30.00" y="488.33" width="416.43" height="212.82" fill="#89a59b" stroke="#222" stroke-width="1" />
+<text x="238.21" y="598.74" text-anchor="middle" font-size="11" font-family="monospace" fill="#111">BLKLL</text>
+<rect x="30.00" y="701.15" width="422.18" height="212.82" fill="#8fa59b" stroke="#222" stroke-width="1" />
+<text x="241.09" y="811.56" text-anchor="middle" font-size="11" font-family="monospace" fill="#111">BLKLR</text>
+<rect x="452.18" y="607.97" width="138.04" height="124.24" fill="#a35fbc" stroke="#222" stroke-width="1" />
+<text x="521.20" y="674.09" text-anchor="middle" font-size="11" font-family="monospace" fill="#111">BLKP</text>
+<rect x="348.65" y="71.91" width="318.65" height="190.96" fill="#92a89b" stroke="#222" stroke-width="1" />
+<text x="507.97" y="171.39" text-anchor="middle" font-size="11" font-family="monospace" fill="#111">BLKRC</text>
+<rect x="377.41" y="262.86" width="271.48" height="200.16" fill="#a2a89b" stroke="#222" stroke-width="1" />
+<text x="513.15" y="366.95" text-anchor="middle" font-size="11" font-family="monospace" fill="#111">BLKRS</text>
+<rect x="446.43" y="463.03" width="216.27" height="144.94" fill="#a75fbc" stroke="#222" stroke-width="1" />
+<text x="554.56" y="539.50" text-anchor="middle" font-size="11" font-family="monospace" fill="#111">BLKT</text>
+<rect x="30.00" y="275.52" width="347.41" height="212.82" fill="#a4aa9b" stroke="#222" stroke-width="1" />
+<text x="203.70" y="385.93" text-anchor="middle" font-size="11" font-family="monospace" fill="#111">BLKUL</text>
+<rect x="30.00" y="62.70" width="318.65" height="212.82" fill="#aaaa9b" stroke="#222" stroke-width="1" />
+<text x="189.32" y="173.11" text-anchor="middle" font-size="11" font-family="monospace" fill="#111">BLKUR</text>
+</svg>
