@@ -1,7 +1,7 @@
 # Current SA Baseline
 
 對照來源：
-- [BTREE_SA/Reference/SA_method.txt](/mnt/d/Bili/PD/FINAL/BTREE_SA/Reference/SA_method.txt)
+- [readme.md](/mnt/d/Bili/PD/FINAL/BTREE_SA/readme.md)
 - [floorplanner.h](/mnt/d/Bili/PD/FINAL/BTREE_SA/src/floorplanner.h:1)
 - [sa.cpp](/mnt/d/Bili/PD/FINAL/BTREE_SA/src/sa.cpp:1)
 
@@ -15,6 +15,10 @@
 - overflow-aware
 - feasible-lock
 的 SA baseline。
+
+但要注意：
+- 這裡的 `baseline` 指目前 code 狀態
+- 不是代表後續研究必須沿用同一組 perturbations
 
 ## 目前已有的 stage
 
@@ -70,6 +74,9 @@
 最值得做的不是推翻它，
 而是：
 - 把 cost 擴成 route-aware
-- 把 move 擴成 constraints-aware / congestion-aware
+- 把 move 重設成更適合目前研究目標的 constraints-aware / congestion-aware 版本
 - 把 legalization 擴成 targeted repair
 
+所以：
+- `B*-tree + SA` 應保留
+- `現有 perturbation` 不必綁死

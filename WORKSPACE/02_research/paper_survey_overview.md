@@ -4,6 +4,7 @@
 - 統整目前資料夾中的參考 paper
 - 快速判斷哪些想法可直接用在 `E_2026 Early Floorplanning with Global Route`
 - 幫 `B*-tree + SA` 這條主線找最相關的支撐方法
+- 並把 `REFERENCE/` 中主要論文逐篇整理成可重用的設計點
 
 ## 優先度總覽
 
@@ -31,6 +32,25 @@
 
 ### 第四優先：可參考但先保留
 - `Reinforcement-Learning-For-Automated-Chip-Floorplanning-And-Routing-Optimization.pdf`
+
+## 已補齊的逐篇筆記
+
+目前已整理成獨立筆記的包括：
+- B*-Trees
+- Are Floorplan Representations Important
+- PARSAC
+- Routability Driven Floorplanner with Buffer Block Planning
+- Routability-Driven Placement and White Space Allocation
+- RUDY / OpenROAD
+- SimPLR
+- Improved Global Routing through Congestion Estimation
+- FastRoute 4.0
+- NCTU-GR 2.0
+- NTUplace4h
+- TSV-aware 3D floorplanning
+- Analog / mixed-signal routability-driven floorplanning thesis
+- Metaheuristic review
+- RL-EDA
 
 ## 對目前主線最重要的 6 篇
 
@@ -133,3 +153,14 @@
 7. `bounded detour / route proxy`
 8. `multi-term objective decomposition`
 
+## 最後收斂
+
+把所有 paper 放在一起看後，結論更清楚：
+- `B*-tree` 保留
+- `SA` 保留，但 perturbation / move set 可以重設
+- 真正該強化的是：
+  - legality-fixing move
+  - congestion-guided move
+  - hotspot repair
+  - virtual inflation / spacing adjustment
+  - channel / FT / top-wire-aware evaluator

@@ -2,6 +2,11 @@
 
 這份是目前最推薦的主線。
 
+重要澄清：
+- 這裡說的 `B*-tree + SA` 是「主骨架」。
+- 不代表要完全沿用 `BTREE_SA` 現在的 perturbation / move set。
+- 現有 repo 的 `SA` 應視為 baseline，真正的 move 設計可以重做。
+
 ## 先回答你的問題
 
 ### 1. 用 B*-tree 可不可以？
@@ -51,11 +56,22 @@
 
 ### Layer 1: Topology search
 - 用 B*-tree
-- 保留：
-  - rotate
-  - swap
-  - subtree move
-  - delete + reinsert
+- 但不必被目前 repo 的 move 綁住
+
+可以保留或重做：
+- rotate
+- swap
+- subtree move
+- delete + reinsert
+- constraints-fixing move
+- congestion-fixing move
+- region-aware reattach
+- hotspot escape move
+
+原則：
+- `B*-tree` 要保留
+- `SA` 要保留
+- perturbation 可以重新設計
 
 ### Layer 2: Cost evaluation
 
@@ -88,7 +104,7 @@
 - 找到幾個 topology basin
 
 做法：
-- 用目前 repo 的 stage 1
+- 可以先沿用目前 repo 的 stage 1
 - legality penalty 保留
 - congestion 先用輕量 proxy
 
@@ -141,6 +157,33 @@
 - 小機率強制插入
 - 成本惡化也可接受
 
+## 關於 SA 方式的正確定位
+
+如果你的意思是：
+- `B*-tree + SA` 要保留
+- 但 `SA` 的 perturbation 不用完全照現在 repo
+
+那我的答案是：完全正確，而且我同意。
+
+更精確地說，應分開看：
+
+### 要保留的
+- B*-tree representation
+- contour packing
+- SA 作為全域搜尋框架
+- fixed-outline legality handling
+
+### 可以重做的
+- perturbation / move set
+- stage schedule
+- acceptance bias
+- repair insertion strategy
+- congestion-aware candidate selection
+
+### 建議做法
+- 先把現有 repo 當 baseline
+- 但把 move set 視為「可替換模組」，不是定案
+
 ## 核心補強 2：Congestion estimator
 
 ### 第一版建議
@@ -185,7 +228,6 @@
 - B*-tree vs sequence pair
 
 而是：
-- `B*-tree + multi-stage SA + constraints-fixing moves + fast congestion evaluator + targeted inflation/spacing repair`
+- `B*-tree + SA skeleton + redesigned perturbations + constraints-fixing moves + fast congestion evaluator + targeted inflation/spacing repair`
 
 這個方向和你現有 repo 的重用率最高，也最值得往下做。
-

@@ -4,15 +4,25 @@
 - 不重寫 `BTREE_SA`
 - 直接在現有結構上擴成 routability-aware B*-tree SA
 
+重要澄清：
+- 不重寫 `BTREE_SA` 不等於不改 SA move。
+- 我們可以保留 repo 架構、資料結構、packing、cost 更新流程，
+  但重新設計 perturbation / repair / move selection。
+
 ## Step 1: 保持目前主骨架不變
 
 保留：
 - B*-tree
 - contour packing
 - solution snapshot / restore
-- multi-stage SA
+- SA 骨架
 - feasible lock
 - normalization
+
+不必強制保留：
+- 現在的 perturbation 比例
+- 現在的 move 種類
+- 現在的 stage schedule 細節
 
 ## Step 2: 新增 congestion 資料
 
@@ -44,9 +54,20 @@
 
 但先保留原本 overflow penalty，不要一次重寫全部。
 
-## Step 5: 新增 repair moves
+## Step 5: 重做 move set + 新增 repair moves
 
-新增兩種 move：
+這一步不只是「補兩個 move」。
+比較合理的是把目前的 move set 視為 baseline，重新切成：
+
+- generic topology moves
+- legality-fixing moves
+- congestion-fixing moves
+- diversification moves
+
+也就是：
+- 可以保留現有 rotate / swap / subtree move / delete-insert
+- 但不需要完全照搬
+- 可以重新定義觸發條件與權重
 
 ### `perturbConstraintFixMove()`
 - 專修 outline / boundary 類違規
@@ -55,6 +76,10 @@
 - 專修 top-k hotspot / bottleneck
 
 這兩種 move 可在 `perturbRandomMove()` 裡以小機率插入。
+
+如果之後發現有必要，也可以：
+- 直接把 `perturbRandomMove()` 的權重機制重寫
+- 對不同 stage 用不同 move distribution
 
 ## Step 6: 新增 fast evaluator
 
@@ -77,4 +102,3 @@
 - 改成 sequence pair
 - 直接上 RL
 - 一開始就做全域 route solver
-
